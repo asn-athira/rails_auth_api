@@ -3,9 +3,12 @@ default: &default
   encoding: unicode
   #username: root
   #password: root
+  username: 
+password: 
   pool: 5
   timeout: 5000
-  host: localhost
+ # host: localhost
+   host: https://rails-client-api.herokuapp.com
 development:
   <<: *default
   database: auth-client-api_development
