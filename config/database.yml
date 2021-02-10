@@ -1,18 +1,27 @@
-default: &default
+development:
   adapter: postgresql
   encoding: unicode
-  #username: root
-  #password: root
-  username: 
-  password: 
+  username: root
+  password: root
   pool: 5
   timeout: 5000
   host: localhost
-development:
-  <<: *default
-  database: auth-client-api_development
+  database: auth_client_api_development
 test:
-  <<: *default
-  database: auth-client-api_test
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+  host: localhost
+  database: auth_client_api_test
 production:
-    url: <%= ENV['DATABASE_URL'] %>
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+  host: localhost
+  database: auth_client_api_production
