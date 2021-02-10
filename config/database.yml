@@ -4,11 +4,10 @@ default: &default
   #username: root
   #password: root
   username: 
-password: 
+  password: 
   pool: 5
   timeout: 5000
- # host: localhost
-   host: https://rails-client-api.herokuapp.com
+  host: localhost
 development:
   <<: *default
   database: auth-client-api_development
