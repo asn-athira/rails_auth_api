@@ -15,4 +15,4 @@ test:
   <<: *default
   database: auth-client-api_test
 production:
-  database: ENV['DATABASE_URL']
+    url: <%= ENV['DATABASE_URL'] %>
