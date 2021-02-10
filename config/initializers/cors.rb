@@ -17,7 +17,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do 
   allow do
-    origins 'https://react-auth-1qmu2kgvc.vercel.app'
+    origins 'https://react-auth.asn-athira.vercel.app/'
   
     resource '*',
       headers: :any,
